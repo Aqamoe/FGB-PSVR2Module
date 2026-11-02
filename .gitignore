@@ -1,0 +1,9 @@
+build/
+out/
+.vs/
+*.user
+.sdk-cache/
+node_modules/
+
+# 宿主侧的 ABI 指南只留本地参考，不随仓库分发
+05-native-module-guide.md

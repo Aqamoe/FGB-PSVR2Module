@@ -1,0 +1,17 @@
+FGB PSVR2Module
+Copyright 2026 Aqamoe (光水)
+
+This product includes a copy of fgb_module_api.h from FaceGaze Bridge
+(https://github.com/Aqamoe/FaceGaze-Bridge), licensed under the Apache
+License, Version 2.0. The header is resolved at build time from the release
+pinned in sdk.lock.json; this repository does not contain a copy of it.
+
+The wire format (message types, struct layouts, handshake and polling
+sequence), the blink-to-openness formula and the pupil unit convention were
+informed by the upstream VRCFT module PSVR2Toolkit.VRCFT
+(https://github.com/BnuuySolutions/PSVR2Toolkit.VRCFT), MIT licensed. This
+repository is an independent C++ implementation of that wire format and
+contains none of its source code.
+
+PlayStation VR2 is a trademark of Sony Interactive Entertainment. This project
+is not affiliated with or endorsed by Sony or the PSVR2 Toolkit authors.

@@ -1,0 +1,21 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  module:
+    uses: Aqamoe/FGB-Module-Kit/.github/workflows/module-ci.yml@v0.4.0
+    with:
+      # 冒烟测试会在进程内起合成 TCP 服务端并绑 3364 端口，
+      # GitHub 的 Windows runner 上该端口是空闲的，
+      # 这一项是真正的端到端 ABI 校验（含断线重连），别关掉。
+      run_smoke: true
+    secrets: inherit

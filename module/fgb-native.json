@@ -1,0 +1,14 @@
+{
+  "ModuleId": "com.fgbbridge.psvr2",
+  "ModuleName": "PlayStation VR2",
+  "AuthorName": "Aqamoe (光水)",
+  "Version": "0.1.0",
+  "ModuleDescription": "通过本地 TCP 连接 PlayStation VR2 Toolkit 的眼动 IPC，输出逐眼注视方向、睁眼度与瞳孔直径。不需要 VRCFT，不注入进程。",
+  "UsageInstructions": "1. 电脑已安装 PSVR2 驱动与 PlayStation VR2 Toolkit，并在 Toolkit 中启用眼动追踪（DriverEx 需要在运行）。2. 关闭 VRCFaceTracking：VRCFT 的 PSVR2Toolkit 模块会连同一个 3364 端口并各自轮询。3. 在「模块」页把 PlayStation VR2 设为启动并重启引擎，戴好头显后模块卡片应显示活跃。本模块为社区未验证实现。",
+  "ModulePageUrl": "https://github.com/Aqamoe/FGB-PSVR2Module",
+  "ModuleIcon": "icon.svg",
+  "DllFileName": "psvr2.dll",
+  "AbiVersion": 2,
+  "Capabilities": ["eyes", "gaze"],
+  "RoleHint": "gaze"
+}
