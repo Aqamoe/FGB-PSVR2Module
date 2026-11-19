@@ -11,4 +11,4 @@ permissions:
 
 jobs:
   sync:
-    uses: Aqamoe/FGB-Module-Kit/.github/workflows/sdk-sync.yml@v0.4.3
+    uses: Aqamoe/FGB-Module-Kit/.github/workflows/sdk-sync.yml@v0.4.4
